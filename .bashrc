@@ -16,12 +16,18 @@ alias py='python3'
 alias pe='pipenv'
 
 alias mamp_mysql="/Applications/MAMP/Library/bin/mysql"
-alias mysql4306='mysql -u root -p -h 127.0.0.1 -P 4306'
+alias dock_mysql='mysql -u root -p -h 127.0.0.1 -P 4306'
 
 alias dock='docker'
 alias docks='docker-compose'
 alias docks_down='docker-compose down --rmi all'
-alias dock_machine='docker-machine'
+alias docks_down_all='docker-compose down --rmi all --volumes'
 function dock_exec(){
     docker exec -it $@ sh
+}
+function dock_cmd(){
+    docker exec -it $1 $2
+}
+function dock_pycmd(){
+    docker exec -it $1 python manage.py $2
 }
