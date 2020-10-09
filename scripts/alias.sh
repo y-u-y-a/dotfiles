@@ -35,5 +35,5 @@
 
 source ~/.bashrc
 
-# シェルの再起動
+# restart shell
 exec $SHELL -l

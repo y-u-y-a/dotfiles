@@ -3,7 +3,6 @@
 # <Homebrew> ====================================================
 echo 'Start Install Homebrew...'
 /usr/bin/ruby -e '$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)'
-# brew install caskroom/cask/brew-cask
 # caskによるインストール先を変更
 export HOMEBREW_CASK_OPTS='--appdir=/Applications'
 
@@ -112,15 +111,10 @@ brew cask install\
     visual-studio-code\
     sourcetree\
     sequel-pro\
-    google-backup-and-sync\
     github\
     docker\
     docker-toolbox\
-    minikube\
-    kubectl\
-    virtualbox\
-    vagrant\
-    vagrant-manager\
+    google-backup-and-sync\
     chromedriver\
     heroku/brew/heroku\
     google-cloud-sdk\
@@ -128,3 +122,8 @@ brew cask install\
     watch\
     bat\
     postman\
+    # kubectl\
+    # minikube\
+    # virtualbox\
+    # vagrant\
+    # vagrant-manager\

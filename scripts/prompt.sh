@@ -8,5 +8,5 @@ source ~/.bashrc
 echo "export PS1='\u@\[\e[1;36m\]\W\[\e[0m\]\[\e[1;32m\]$(__git_ps1 "(%s)")\[\e[0m\]$ '" >> ~/.bashrc
 source ~/.bashrc
 
-# シェルの再起動
+# restart shell
 exec $SHELL -l
