@@ -28,3 +28,4 @@ export GOPROJECT=$GOPATH/src/github.com/y-u-y-a
 export PATH="$PATH:$HOME/flutter/bin"
 
 export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
+export AWS_DEFAULT_PROFILE=admin-yuya

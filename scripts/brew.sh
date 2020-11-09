@@ -118,8 +118,6 @@ brew cask install\
     chromedriver\
     heroku/brew/heroku\
     google-cloud-sdk\
-    awscli\
-    terraform\
     ngrok\
     watch\
     bat\
