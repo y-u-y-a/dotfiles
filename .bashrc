@@ -25,9 +25,3 @@ alias docks_down_all='docker-compose down --rmi all --volumes'
 function dock_exec(){
     docker exec -it $@ sh
 }
-# function dock_cmd() {
-#     docker exec -it $1 $2
-# }
-# function dock_pycmd() {
-#     docker exec -it $1 python manage.py $2
-# }
