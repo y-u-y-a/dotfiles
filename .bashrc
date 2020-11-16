@@ -20,8 +20,7 @@ alias dk_mysql='mysql -u root -p -h 127.0.0.1 -P 4306'
 
 alias dk='docker'
 alias dks='docker-compose'
-alias dks_down='docker-compose down --rmi all'
-alias dks_all='docker-compose down --rmi all --volumes'
+alias dks_down='docker-compose down --rmi all --volumes'
 function dk_exec(){
     docker exec -it $@ sh
 }
