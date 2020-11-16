@@ -16,12 +16,14 @@ alias py='python3'
 alias pe='pipenv'
 
 alias mamp_mysql="/Applications/MAMP/Library/bin/mysql"
-alias dock_mysql='mysql -u root -p -h 127.0.0.1 -P 4306'
+alias dk_mysql='mysql -u root -p -h 127.0.0.1 -P 4306'
 
-alias dock='docker'
-alias docks='docker-compose'
-alias docks_down='docker-compose down --rmi all'
-alias docks_down_all='docker-compose down --rmi all --volumes'
-function dock_exec(){
+alias dk='docker'
+alias dks='docker-compose'
+alias dks_down='docker-compose down --rmi all'
+alias dks_all='docker-compose down --rmi all --volumes'
+function dk_exec(){
     docker exec -it $@ sh
 }
+
+alias tf='terraform'
