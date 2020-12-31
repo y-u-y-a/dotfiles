@@ -16,7 +16,7 @@ $ ln -sf ~/dotfiles/.bashrc ~/.bashrc
 ```
 
 
-# shellScriptの覚書き ----------------------------------------
+# shellScriptの覚書き
 
 ## ユーザーの入力を取得し、変数getInputに代入
     $ read getInput
