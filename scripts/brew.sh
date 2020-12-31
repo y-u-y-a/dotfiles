@@ -51,19 +51,14 @@ pyenv global ${pythonVer}
 pyenv rehash
 
 # <Node> =======================================================
-# brewでnodeをインストールしている場合はアンインストール
-# brew uninstall --force node
-
 echo 'Start Install Node.js...'
 brew install nodebrew # バージョン管理
 echo 'export PATH=$PATH:$HOME/.nodebrew/current/bin' >> ~/.bash_profile
 source ~/.bash_profile
 
-nodebrew ls-remote # インストール可能なバージョン一覧
-read -p 'Node.jsのバージョンを指定してください。' nodeVer < /dev/tty
-nodebrew install-binary ${nodeVer}
-nodebrew use ${nodeVer}
-# nodebrew install-binary stable # 最新の安定版をインストール
+nodebrew install-binary stable # 最新の安定版をインストール
+
+npm install -g typescript
 
 # <PHP> ===========================================================
 echo 'Start Install PHP...'
