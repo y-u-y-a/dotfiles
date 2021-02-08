@@ -6,10 +6,9 @@ alias bashrc='vim ~/.bashrc'
 alias src_bashpro='source ~/.bash_profile'
 alias src_bashrc='source ~/.bashrc'
 
-alias git_size='du -sh .git/objects'
-
-alias finder='open ./'
-alias iosws='open ios/Runner.xcworkspace'
+alias gt='git'
+alias ck='git checkout'
+alias br='git branch'
 
 export PIPENV_VENV_IN_PROJECT=true
 alias py='python3'
