@@ -6,8 +6,11 @@ export LDFLAGS="-L/usr/local/opt/openssl@1.1/lib"
 export CPPFLAGS="-I/usr/local/opt/openssl@1.1/include"
 
 export PATH="$PATH:/usr/local/opt/mysql@5.6/bin"
+export PATH="$PATH:/usr/local/opt/mongodb-community@3.6/bin"
 export PATH="$PATH:$HOME/.composer/vendor/bin"
-export PATH=$HOME/.nodebrew/current/bin:$PATH
+
+eval "$(nodenv init -)"
+export PATH="$PATH:$HOME/.nodenv/bin"
 
 eval "$(rbenv init -)"
 export PATH="$PATH:$HOME/.rbenv/shims:/usr/local/bin"

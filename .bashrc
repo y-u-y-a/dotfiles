@@ -25,3 +25,6 @@ function dk_exec(){
 }
 
 alias tf='terraform'
+function ngrk(){
+    ngrok http ${1:-3000}
+}
