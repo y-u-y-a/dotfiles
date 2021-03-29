@@ -6,9 +6,9 @@ alias bashrc='vim ~/.bashrc'
 alias src_bashpro='source ~/.bash_profile'
 alias src_bashrc='source ~/.bashrc'
 
-alias gt='git'
 alias ck='git checkout'
-alias br='git branch'
+alias ckb='git checkout -b'
+alias reset_commit='git reset --soft HEAD^'
 
 export PIPENV_VENV_IN_PROJECT=true
 alias py='python3'
@@ -26,5 +26,5 @@ function dk_exec(){
 
 alias tf='terraform'
 function ngrk(){
-    ngrok http ${1:-3000}
+    ngrok http --region ap ${1:-3000}
 }
