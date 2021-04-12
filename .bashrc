@@ -26,5 +26,5 @@ function dk_exec(){
 
 alias tf='terraform'
 function ngrk(){
-    ngrok http --region ap ${1:-3000}
+    ngrok http ${1:-3000}
 }
