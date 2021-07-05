@@ -1,0 +1,31 @@
+# Libs
+# export PATH="$PATH:/usr/local/opt/mysql-client/bin"
+# export PATH="$PATH:/usr/local/opt/openssl@1.1/bin"
+# export LDFLAGS="-L/usr/local/opt/openssl@1.1/lib"
+# export CPPFLAGS="-I/usr/local/opt/openssl@1.1/include"
+# MySQL
+# export PATH="$PATH:/usr/local/opt/mysql@5.6/bin"
+# export PATH="$PATH:/usr/local/opt/mongodb-community@3.6/bin"
+# export PATH="$PATH:$HOME/.composer/vendor/bin"
+# Node
+eval "$(nodenv init -)"
+export PATH="$PATH:$HOME/.nodenv/bin"
+# # Ruby
+# eval "$(rbenv init -)"
+# export PATH="$PATH:$HOME/.rbenv/shims:/usr/local/bin"
+# # Python
+# eval "$(pyenv init -)"
+# export PATH="$PATH:$HOME/.pyenv/bin"
+# export PIPENV_VENV_IN_PROJECT=1
+# export PYTHONDONTWRITEBYTECODE=1
+# PHP
+# export PATH="$PATH:/usr/local/opt/php@7.4/bin"
+# export PATH="$PATH:/usr/local/opt/php@7.4/sbin"
+# Golang
+# export GOPATH=$HOME/go
+# export PATH="$PATH:$GOPATH/bin"
+# export GO111MODULE=on
+# export GOPROJECT=$GOPATH/src/github.com/y-u-y-a
+
+# export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
+# export AWS_DEFAULT_PROFILE=admin-yuya
