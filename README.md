@@ -1,15 +1,30 @@
-# scriptsのファイルについて
-## alias.sh
-よく使うコマンドをエイリアスとして設定
-## library.sh
-Homebrewで管理している言語やライブラリをインストール
-また、brew caskコマンドでインストールできるChromeなどのアプリケーションもインストールを自動化している
-## prompt.sh
-コマンドプロンプトをカラーリングするための設定
+## 構築
+```sh
+$ cd dotfiles
+$ zsh index.sh
+```
 
+### MySQL
+`https://github.com/Homebrew/homebrew-services`
+```sh
+$ brew install mysql
+$ brew tap homebrew/services # servicesコマンドインストール
+$ brew services start mysql # 自動起動
+```
+
+### Node
+```sh
+$ brew install nodenv
+$ nodenv install --list # インストールできるバージョンを確認
+$ nodenv install 14.12.0
+$ nodenv versions # インストール済みのバージョンを確認
+$ nodenv global 14.12.0 # ゴローバルに使用するバージョンを指定
+$ nodenv local 14.12.0 # プロジェクトごとに利用するバージョンを指定
+$ npm install -g yarn
+```
 
 ## ドットファイルのシンボリックリンクを貼る
-以下のコマンドでホームディレクトリにドットファイルの審美リックを貼る
+以下のコマンドでホームディレクトリにドットファイルのシンボリックを貼る
 ```
 $ ln -sf ~/dotfiles/.bash_profile ~/.bash_profile
 $ ln -sf ~/dotfiles/.bashrc ~/.bashrc
