@@ -22,11 +22,13 @@ alias czenv='cat ~/.zshenv'
 alias czrc='cat ~/.zshrc'
 
 # Git
-alias gc='git checkout'
-alias gcb='git checkout -b'
-alias gct='git commit -m'
+alias gb='git branch'
+alias gck='git checkout'
+alias gckb='git checkout -b'
+alias gc='git commit -m'
 alias gpush='git push'
 alias gpull='git pull'
+alias glog='git log'
 alias greset='git reset --soft HEAD^'
 
 # Python
