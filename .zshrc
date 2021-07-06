@@ -24,8 +24,10 @@ alias czrc='cat ~/.zshrc'
 # Git
 alias gc='git checkout'
 alias gcb='git checkout -b'
-alias gct='git commit'
-alias gct_reset='git reset --soft HEAD^'
+alias gct='git commit -m'
+alias gpush='git push'
+alias gpull='git pull'
+alias greset='git reset --soft HEAD^'
 
 # Python
 export PIPENV_VENV_IN_PROJECT=true
@@ -35,7 +37,8 @@ alias pe='pipenv'
 # Docker
 alias dk='docker'
 alias dks='docker-compose'
-alias dks_down='docker-compose down --rmi all'
+alias dksdown='docker-compose down --rmi all'
+alias dkrmv='docker volume rm $(docker volume ls -qf dangling=true)'
 function dk_mysql(){
     mysql -u root -p -h 127.0.0.1 -P $@
 }
