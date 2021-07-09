@@ -45,7 +45,7 @@ function dk_mysql(){
     mysql -u root -p -h 127.0.0.1 -P $@
 }
 function dk_exec(){
-    docker exec -it $@ bash
+    docker exec -it $@ sh
 }
 
 # Others
