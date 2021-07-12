@@ -53,3 +53,7 @@ alias tf='terraform'
 function ngrk(){
     ngrok http ${1:-3000}
 }
+
+# Node
+export PATH="$PATH:$HOME/.nodenv/bin"
+eval "$(nodenv init -)"
